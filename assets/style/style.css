@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format(ttf),
+         url('../fonts/static/Inter-Bold.ttf') format(ttf),
+         url('../fonts/static/Inter-Regular.ttf') format(ttf),
+         url('../fonts/static/Inter-SemiBold.ttf') format(ttf);
+    font-weight: 400, 600, 700;
+}
+
+:root {
+    --cor-de-destaque: hsl(75, 94%, 57%);
+    --cor-de-fundo: hsl(0, 0%, 8%);
+    --cor-do-card: hsl(0, 0%, 12%);
+    --cor-dos-links: hsl(0, 0%, 20%);
+    --cor-de-texto:hsl(0, 0%, 100%);
+    --cor-de-descricao: hsl(0, 0%, 73%);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: var(--cor-de-fundo);
+    justify-content: center;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+    color: var(--cor-de-texto);
+}
+
+main.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-do-card);
+    height: 600px;
+    width: 380px;
+    border-radius: 10px;
+}
+
+main>img {
+    width: 90px;
+    border-radius: 50%;
+    margin: -310px 0px 30px 0px;
+}
+
+main>h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+main>h2.localidade {
+    font-size: 14px;
+    color: var(--cor-de-destaque);
+    margin-bottom: 22px;
+}
+
+main>p {
+    font-size: 15px;
+    color: var(--cor-de-descricao);
+}
+
+main>div.links {
+    display: flex;
+    position: absolute;
+    margin-top: 240px;
+    flex-direction: column;
+}
+
+main>div.links>a {
+    background-color: var(--cor-dos-links);
+    color: var(--cor-de-texto);
+    padding: 14px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    inline-size: 310px;
+}
+
+main>div.links>a:hover {
+    background-color: var(--cor-de-destaque);
+    color: var(--cor-dos-links);
+    transition: 0.7s;
+}
