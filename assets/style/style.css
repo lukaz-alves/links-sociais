@@ -64,6 +64,7 @@ main>h2.localidade {
 main>p {
     font-size: 15px;
     color: var(--cor-de-descricao);
+    margin-bottom: 20px;
 }
 
 main>div.links {
