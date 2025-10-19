@@ -38,15 +38,15 @@ main.card {
     align-items: center;
     flex-direction: column;
     background-color: var(--cor-do-card);
-    height: 600px;
+    height: 620px;
     width: 380px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 main>img {
     width: 90px;
     border-radius: 50%;
-    margin: -310px 0px 30px 0px;
+    margin: -290px 0px 30px 0px;
 }
 
 main>h1 {
@@ -58,7 +58,7 @@ main>h1 {
 main>h2.localidade {
     font-size: 14px;
     color: var(--cor-de-destaque);
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 main>p {
@@ -70,7 +70,7 @@ main>p {
 main>div.links {
     display: flex;
     position: absolute;
-    margin-top: 240px;
+    margin-top: 270px;
     flex-direction: column;
 }
 
